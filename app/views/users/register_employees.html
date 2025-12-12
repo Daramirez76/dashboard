@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../public/css/bootstrap.min.css">
     <title>Registrarse</title>
     <style>
         * {
@@ -221,7 +221,7 @@
                     <div class="form-card">
                         <div class="register-title mb-4">Registrarse</div>
                         
-                        <form>
+                        <form id="formRegister" novalidate>
                             <div class="row g-4">
                                 <div class="col-12 col-md-6">
                                     <label class="form-label" for="nombre">Nombre</label>
@@ -268,8 +268,8 @@
                                 </div>
 
                                 <div class="col-12 d-flex gap-3 mt-4">
-                                    <a href="main_page_employees.html" class="flex-grow-1"><button type="button" class="btn btn-back w-100">Regresar</button></a>
-                                    <a href="main_page(user).html" class="flex-grow-1"><button type="button" class="btn btn-register w-100">Crear Cuenta</button></a>
+                                    <button type="submit" class="flex-grow-1 btn btn-register w-100">Crear Cuenta</button></a>
+                                    <a href="../../main_page_employees.html" class="flex-grow-1"><button type="button" class="btn btn-back w-100">Regresar</button></a>
                                 </div>
                             </div>
                         </form>
@@ -286,4 +286,5 @@
       </div>
     </footer>
     </body>
+    <script src="../../../public/js/validate_form.js"></script>
 </html>
